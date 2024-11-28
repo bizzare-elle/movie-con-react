@@ -11,8 +11,10 @@ export interface Anime {
     posterImage: {
       small: string;
       large: string;
+      original: string;
     };
     coverImage: {
+      large: string;
       original: string;
     };
     startDate: string;
