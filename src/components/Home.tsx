@@ -49,13 +49,13 @@ const Home = () => {
         <h3 className="text-text font-bold text-[25px]">Anime</h3>
 
         {isError && (
-          <div className="h-[100vh] flex justify-center items-center font-bold">
+          <div className=" flex justify-center items-center font-bold">
             <h1>Error Loading Data</h1>
           </div>
         )}
 
         {isLoading && (
-          <div className="h-[90vh] grid grid-cols-5 gap-4 py-5 ">
+          <div className=" grid grid-cols-5 gap-4 py-5 ">
             {Array.from({ length: 20 }).map((_, index) => (
               <Skeleton
                 key={index}
